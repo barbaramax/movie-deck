@@ -2,12 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Trabalho Final</title>
+    <title>Movie Deck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="imagens/favicon.ico">
 </head>
 <body>
+    <!--header e nav-->
     <div class="header">
         <nav>
             <h1 class="titulo">Movie<strong>Deck</strong></h1>
@@ -19,9 +21,12 @@
             </ul>
         </nav>
     </div>
+
+    <!--corpo - catálogo dos filmes - listas -->
     <div class="corpo" id="corpo">
         <h2>Descubra novos filmes e o que seus amigos estão achando.</h2>
         <div class="container">
+            <!--filmes com melhor avaliação-->
             <div class="texto">
                 <h4> Melhores Filmes</h4>
                 <hr>
@@ -112,6 +117,8 @@
             </li>
             
         </ul>
+
+        <!--filmes recomendados/em alta-->
         <div class="texto">
             <h4> Filmes Recomendados</h4>
             <hr>
@@ -209,6 +216,8 @@
             </li>
         </ul>
     </div>
+
+    <!--novidades - tabela-->
     <div class="novidades" id="novidade">
         <h2>Novidades</h2>
         <hr>
@@ -238,6 +247,8 @@
                     </tr>
             </table>
         </div>
+
+        <!--login ou criação de conta - formulario -->
         <h2>Crie sua conta.</h2>
         <div class="formulario" id="formulario">
             <form action="trabalho.py"> <!--Bugado!!! arrumar-->
@@ -261,6 +272,7 @@
         </div>
     </div>
 
+    <!--rodapé - lista e link-->
     <footer class="footer" id="footer">
         <div class="rodape">
             <div class="titulos">
@@ -306,7 +318,7 @@
                     +10.000 Filmes Avaliados
                 </li>
                 <li>
-                    +5.000 Usuários Ativos
+                    +10.000 Usuários Ativos
                 </li>
                 <li>
                     +2M Avaliações Feitas
