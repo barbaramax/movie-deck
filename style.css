@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*configurações gerais*/
 body {
     font-family: "Roboto", serif;
     font-style: normal;
@@ -9,7 +10,6 @@ body {
     box-sizing: border-box;
     outline: none;
 }
-
 .header {
     width: 100%;
     min-height: auto;
@@ -28,6 +28,7 @@ body {
     padding: 0 20px;
 }
 
+/*nav*/
 nav {
     width: 100%;
     height: auto;
@@ -62,7 +63,6 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    white-space: nowrap;
 }
 
 nav ul li a:hover {
@@ -72,9 +72,9 @@ nav ul li a:hover {
 nav h3 {
     color: white;
     margin: 0;
-    flex-shrink: 0;
 }
 
+/*configurações do corpo*/
 .titulo {
     margin: 0;
     color: white;
@@ -90,6 +90,7 @@ h2 {
     margin-left: 20px;
 }
 
+/*filmes/catálogo*/
 .container {
     margin-top: 0;
     color: white;
@@ -154,6 +155,7 @@ li {
     color: white;
 }
 
+/*configurações da aba de novidades*/
 .novidades {
     margin-left: auto;
     margin-right: auto;
@@ -223,7 +225,8 @@ li {
     padding: 0 5px;
 }
 
-#formulario {
+/*configurações do formulário/login*/
+.formulario {
     background: #1e1e1e;
     width: 90%;
     max-width: 450px;
@@ -291,26 +294,23 @@ footer {
     color: rgb(110, 110, 110);
 }
 
-#rodape {
+/*configurações do rodapé*/
+.rodape {
     background-color: #161616;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
     padding: 20px;
 }
-
-#redes {
-    font-size: 13px;
-    margin-bottom: 12px;
+.titulos a{
+    text-decoration: none;
     color: white;
 }
-
-#lista {
+.lista {
     display: flex;
     flex-direction: column;
 }
-
-#copyright {
+.copyright {
     display: flex;
     justify-content: center;
     background-color: #0c0c0c;
@@ -318,6 +318,7 @@ footer {
     padding: 10px;
 }
 
+/*responsividade geral aqui*/
 @media (max-width: 480px) {
     nav {
         flex-direction: column;
@@ -376,7 +377,7 @@ footer {
         font-size: 11px;
     }
 
-    #formulario {
+    .formulario {
         padding: 20px 15px;
         margin: 30px auto 50px auto;
     }
@@ -389,15 +390,14 @@ footer {
     .cadastro {
         padding: 6px 30px;
     }
-
-    #rodape {
-        grid-template-columns: 1fr;
-        padding: 15px 10px;
+    .rodape {
+    grid-template-columns: 1fr;
+    padding: 15px 10px;
     }
 
-    #copyright {
-        font-size: 13px;
-        padding: 8px;
+    .copyright {
+    font-size: 13px;
+    padding: 8px;
     }
 }
 
@@ -435,10 +435,6 @@ footer {
         margin-right: 20px;
     }
 
-    .tabela-filmes {
-        min-width: unset;
-    }
-
     .tabela-filmes th,
     .tabela-filmes td {
         padding: 12px 8px;
@@ -449,7 +445,7 @@ footer {
         height: 150px;
     }
 
-    #rodape {
+    .rodape {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
         padding: 20px 20px;
@@ -491,7 +487,7 @@ footer {
         height: 180px;
     }
 
-    #rodape {
+    .rodape {
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
         padding: 24px 24px;
@@ -533,7 +529,7 @@ footer {
         height: 200px;
     }
 
-    #rodape {
+    .rodape {
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
         padding: 32px 20px;
