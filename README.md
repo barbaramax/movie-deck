@@ -20,7 +20,7 @@ Atualmente, o projeto é **apenas visual** e não possui funcionalidades de cada
 
 Essa é a página inicial do MovieDeck, mostrando a listagem de filmes:
 
-<img src="visual-site.png"/>
+<img src="imagens/visual-site.png"/>
 
 ---
 
